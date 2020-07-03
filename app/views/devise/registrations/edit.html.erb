@@ -1,0 +1,21 @@
+<div class="container-fluid container-fluid-admin">
+        <div class="row row-admin">
+          <div class="col-md-2 col-sm-12">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-mountain-list" data-toggle="list" href="#list-mountain" role="tab" aria-controls="mountain">Mon compte</a>
+              <a class="list-group-item list-group-item-action" id="list-booking-list" data-toggle="list" href="#list-booking" role="tab" aria-controls="booking">Mes personnes de confiance</a>
+              <a class="list-group-item list-group-item-action" id="list-card-list" data-toggle="list" href="#list-card" role="tab" aria-controls="card">Mes dossiers</a>
+            </div>
+          </div>
+          <div class="col-md-10 col-sm-12">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-mountain" role="tabpanel" aria-labelledby="list-mountain-list"><%= render "devise/registrations/part/edit" %></div>
+              <div class="tab-pane fade" id="list-booking" role="tabpanel" aria-labelledby="list-booking-list"><%#= render "pages/admin/bookings" %></div>
+              <div class="tab-pane fade" id="list-card" role="tabpanel" aria-labelledby="list-card-list"><%#= render "pages/admin/cards" %></div>
+            </div>
+          </div>
+        </div>
+</div>
+
+
+
